@@ -1,0 +1,58 @@
+using System;
+
+namespace SampleApplication
+{
+public class Person
+{
+	public void Greet()
+	{
+	Console.WriteLine("Hello! Good Morning");	
+	}	
+	public int age;
+	public void SetAge(int age)
+	{
+	Console.WriteLine("My age is: " + age + " years old on the screen");
+	}
+}
+ class Student:Person
+ {
+     public void Study()
+	{
+	Console.WriteLine("I am studying on the screen");
+	}
+	 public void ShowAge()
+	{
+	Console.WriteLine("My age is: " + age + " years old on the screen");
+	}
+ }
+ class Teacher:Person
+	 {
+ 	public void Explain()
+		{
+		Console.WriteLine("I am Explaining on the screen");
+		}
+	 }
+ public class StudentProfessorTest
+ {
+	public static void Main()
+	{
+		
+		Person man = new Person();
+		man.Greet();
+		
+		Student sridhar = new Student();
+		sridhar.Study();
+		sridhar.SetAge(22);
+		sridhar.Greet();
+		sridhar.ShowAge();
+		
+		Teacher trainer = new Teacher();
+		trainer.Greet();
+		trainer.SetAge(45);
+		trainer.ShowAge();
+		trainer.Explain();
+		
+		Console.ReadLine();
+	}
+ }
+}

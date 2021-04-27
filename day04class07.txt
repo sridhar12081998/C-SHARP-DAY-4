@@ -1,0 +1,31 @@
+using System;
+
+namespace Class7
+{					
+public class MyException: ApplicationException
+{
+		public void MyOutofRangeException()
+	{
+	Console.WriteLine("Exception occured, Array is out of range");
+	}
+}
+public class Program
+{
+	public static void Main()
+	{
+		int[] x = new int[5];
+			try
+			{
+			 	if(x[6] == 4)
+				{
+					throw new MyException();
+				}
+			}
+		   catch(MyException ent)
+		      {
+		            ent.MyOutofRangeException();
+		       }
+		      Console.ReadLine();
+      }
+ } 
+}

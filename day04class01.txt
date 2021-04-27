@@ -1,0 +1,20 @@
+using System;
+using Assembly1;
+
+namespace Day_4
+public class Program
+{
+	public void display()
+	{
+	Console.WriteLine("Hi I am using Arithmetic Operations:");
+	}
+	public static void Main()
+	{
+		AssemblyClass assemblyclass = new AssemblyClass();
+		Console.WriteLine(assemblyclass.sum(2,3));
+		Console.WriteLine(assemblyclass.sub(2,3));
+		Console.WriteLine(assemblyclass.mul(2,3));
+		Console.WriteLine(assemblyclass.division(2,3));
+		Console.ReadLine();
+	}
+}

@@ -1,0 +1,28 @@
+using System;
+namespace Day_3
+{	
+	
+class Product
+   {
+          public string ProductName; 
+	  public int ProductQuantity;
+	  public double ProductPrice;
+	  public double ProductTotal;
+    }	
+	public static void Main()
+	  {
+		Product product1 = new Product();
+		product1.ProductPrice = 200;
+		product1.ProductName = "Clock";
+		Console.WriteLine("Enter the Quantity of the Product:");
+		product1.ProductQuantity = Convert.ToInt32(Console.ReadLine());
+		product1.ProductTotal = product1.ProductQuantity *product1.ProductPrice;
+		    Console.WriteLine("Product Details:");
+	            Console.WriteLine(product1.ProductPrice);
+		    Console.WriteLine(product1.ProductName);
+		    Console.WriteLine(product1.ProductQuantity);
+		    Console.WriteLine(product1.ProductTotal);
+		    Console.ReadLine();
+          }
+}
+   }
